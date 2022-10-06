@@ -1,0 +1,11 @@
+
+.section__location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #DCDCDC;
+    &-input {
+        margin-left: 20px;
+    }
+}

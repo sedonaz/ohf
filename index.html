@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./scss/style.css" />
+        <script src="https://kit.fontawesome.com/05abdaca7b.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap" rel="stylesheet">
+        <title>Oh my food</title>
+    </head>
+
+    <body>
+        <!--HEADER-->
+        <header class="header">
+            <img class="header__logo" src="./assets/images/ohmyfood.png" alt="logo-omf-header" />
+        </header> 
+        <!--LOCATION-->
+        <section class="section__location">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="section__location-input">Paris, Belleville</p>
+        </section>
+        
+        <main>
+            <!--HOME-->
+            <section class="home">
+                <h2 class="home-title">Réservez le menu qui vous convient</h2>
+                <p class="home-subtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+                    <a href="#restaurants" class="home-btn btn-action">Explorer nos restaurants</a>
+            </section>
+            <!--FUNCTION-->
+            <section class="function">
+                <h2 class="function-title">Fonctionnement</h2>
+                    <div class="function-card-list">
+                    <p class="function-card-list-title"><i class="fas fa-mobile-screen-button"></i>Choisissez un restaurant</p>
+                    </div>
+                    <div class="function-card-list">
+                        <p class="function-card-list-title"><i class="fas fa-list"></i>Composez votre menu</p>
+                    </div>
+                    <div class="function-card-list">
+                      <p class="function-card-list-title"><i class="fa-solid fa-store"></i>Dégustez au restaurant</p>
+                    </div>    
+            </section>
+            <!--RESTAURANTS-->
+            <section class="restaurants">
+                <div class="restaurants-list">
+                    <h2>Restaurants</h2>
+                    <div class="restaurants-list-card">
+                        <i class="far fa-heart"></i> 
+                        <a href="#">
+                            <img src="./assets/images/la-palette-du-goût.jpg" alt="restaurant-picture" class="restaurants-list-card-img"/>
+                            <h3 class="restaurants-list-card-text">La palette du goût</h3>
+                            <p class="restaurants-list-card-place">Ménilmontant</p>
+                        </a>
+                    </div>
+                    <div class="restaurants-list-card">
+                        <i class="far fa-heart"></i>
+                        <a href="#">
+                            <img src="./assets/images/la-note-enchantée.jpg" alt="restaurant-picture" class="restaurants-list-card-img" />
+                            <h3 class="restaurants-list-card-text">La note la-note-enchantée</h3>
+                            <p class="restaurants-list-card-place">Charonne</p>     
+                        </a>
+                    </div>
+                    <div class="restaurants-list-card">
+                        <i class="far fa-heart"></i>
+                        <a href="#">    
+                            <img src="./assets/images/à-la-française.jpg" alt="restaurant-picture" class="restaurants-list-card-img"/>
+                            <h3 class="restaurants-list-card-text">À la française</h3>
+                            <p class="restaurants-list-card-place">Cité Rouge</p>    
+                        </a>
+                    </div>
+                    <div class="restaurants-list-card">
+                        <i class="far fa-heart"></i>
+                        <a href="#">
+                            <img src="./assets/images/le-delice-des-sens.jpg" alt="restaurant-picture" class="restaurants-list-card-img"/>
+                            <h3 class="restaurants-list-card-text">Le délice des sens</h3>
+                            <p class="restaurants-list-card-place">Folie-Méricourt</p>        
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+            <!--FOOTER-->
+            <footer class="footer">
+                <img class="footer__logo" src="./assets/images/ohmyfood@2x.svg" alt="logo-omf-footer"/>
+                <div id="footer-list">
+                    <p class="footer-list-link">
+                        <i class="fas fa-utensils"></i> 
+                        <a href="#">Proposer un restaurant</a>     
+                    </p> 
+                    <p class="footer-list-link">
+                        <i class="fa-solid fa-handshake"></i>
+                        <a href="#">Devenir partenaire</a>
+                    </p>
+                    <p><a href="#">Mentions légales</a></p>
+                   <p><a href="#">Contact</a></p>
+                </div>
+            </footer>
+    </body>

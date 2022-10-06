@@ -1,0 +1,14 @@
+.footer {
+    background-color: #353535;
+    color: white;
+    padding: 2em;
+    &__logo {
+        filter: invert(1);
+        padding: 5px;
+    }
+    
+    a {
+        color: white;
+        
+    }
+}

@@ -1,0 +1,126 @@
+body {
+  font-family: "roboto";
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  background-color: white;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.header__logo {
+  height: 2.5rem;
+  margin-top: 30px;
+}
+
+.section__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #DCDCDC;
+}
+.section__location-input {
+  margin-left: 20px;
+}
+
+body {
+  margin: 0px;
+}
+
+main .home {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 12rem;
+  padding: 2rem;
+}
+main .function {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .function-title {
+  width: 100%;
+  margin-left: 8rem;
+}
+main .function-card-list {
+  display: flex;
+  height: 5rem;
+  width: 90%;
+  align-items: inherit;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+main .function-card-list::before {
+  align-items: center;
+  background-color: #9356dc;
+  border-radius: 20px;
+  color: #fff;
+  counter-increment: ope;
+  content: counter(ope);
+  display: flex;
+  height: 1.5em;
+  justify-content: center;
+  padding: 0.3em;
+  width: 1.5em;
+}
+main .function-card-list-title {
+  text-align: center;
+}
+main .restaurants {
+  background-color: #f7f7f7;
+}
+main .restaurants-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .restaurants-list-card {
+  width: 90%;
+  margin: 20px;
+  border-radius: 12px;
+  background-color: white;
+  height: 15rem;
+}
+main .restaurants-list-card-img {
+  width: 100%;
+  height: 11rem;
+  border-radius: 12px 12px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .restaurants-list-card-text {
+  margin: 5px 0px 0px 20px;
+}
+main .restaurants-list-card-place {
+  margin: 5px 0px 0px 20px;
+}
+main .restaurants-list-card i {
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  margin-top: 12.5rem;
+  margin-left: 35rem;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  padding: 2em;
+}
+.footer__logo {
+  filter: invert(1);
+  padding: 5px;
+}
+.footer a {
+  color: white;
+}/*# sourceMappingURL=style.css.map */
