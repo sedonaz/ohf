@@ -1,6 +1,6 @@
 body {
   font-family: "roboto";
-  font-size: 20px;
+  font-size: 19px;
 }
 
 a {
@@ -87,13 +87,15 @@ a {
     margin: 20px;
     border-radius: 12px;
     background-color: white;
-    height: 15rem;
+    height: 16rem;
   }
   .restaurants-list-card-new {
     position: absolute;
     right: 1em;
     background-color: #99E2D0;
     margin: 10px 20px 0px 0px;
+    color: #3CB371;
+    font-size: 20px;
   }
   .restaurants-list-card-img {
     width: 100%;
@@ -104,6 +106,15 @@ a {
   }
   .restaurants-list-card-text {
     margin: 5px 0px 0px 20px;
+  }
+  .restaurants-list-card-subtitle {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1em;
+  }
+  .restaurants-list-card-subtitle i {
+    font-size: 30px;
+    margin-top: -0.5em;
   }
   .restaurants-list-card-place {
     margin: 5px 0px 0px 20px;

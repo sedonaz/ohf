@@ -64,12 +64,14 @@ main {
             margin: 20px;
             border-radius: 12px;
             background-color: white;
-            height: 15rem;
+            height: 16rem;
         &-new {
             position: absolute;
             right: 1em;
             background-color: #99E2D0;
             margin: 10px 20px 0px 0px;
+            color: #3CB371;
+            font-size: 20px;
         }
         
         &-img {
@@ -82,7 +84,15 @@ main {
         &-text {
             margin: 5px 0px 0px 20px;
         }
-
+        &-subtitle {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 1em;
+        i {
+            font-size: 30px;
+            margin-top: -0.5em;
+        }
+        }
         &-place {
             margin: 5px 0px 0px 20px;
         }
