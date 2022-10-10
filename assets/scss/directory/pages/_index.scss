@@ -1,4 +1,4 @@
-    
+@media screen and (max-width: 640px) {    
 body {
     margin: 0px;
     
@@ -9,7 +9,7 @@ main {
         display: flex;
         flex-direction: column;
         text-align: center;
-        height: 12rem;
+        height: 15rem;
         padding: 2rem;
     }
 
@@ -17,11 +17,10 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        &-title {
-        width: 100%;
-        margin-left: 8rem;
+        &-title{
+            width: 85%;
         }
+      
        &-card-list {
             display: flex;
             height: 5rem;
@@ -31,21 +30,24 @@ main {
             border-radius: 20px;
             margin-bottom: 1rem;
         &::before {
-            align-items: center;
-            background-color: #9356dc;
-            border-radius: 20px;
-            color: #fff;
-            counter-increment: ope;
-            content: counter(ope);
+            counter-increment: compteListe 1;
+            content: counter(compteListe) " ";
+            background: #9356dc;
+            height: 2rem;
+            width: 2rem;
+            border-radius: 100px;
             display: flex;
-            height: 1.5em;
             justify-content: center;
-            padding: 0.3em;
-            width: 1.5em;
+            align-items: center;
+            color: #fff;
         }
-        &-title {
-            padding: 1rem;
+            
+        i {
+            padding: 1em;
         }
+
+        }
+        
         }
         }
     
@@ -79,14 +81,7 @@ main {
         &-place {
             margin: 5px 0px 0px 20px;
         }
-        i {
-            color: black;
-            font-size: 25px;
-            position: absolute;
-            margin-top: 12.5rem;
-            margin-left: 35rem;
         
-        }        
         }
     }
     }

@@ -1,6 +1,6 @@
 body {
   font-family: "roboto";
-  font-size: 18px;
+  font-size: 20px;
 }
 
 a {
@@ -8,17 +8,18 @@ a {
   color: black;
 }
 
-.header {
-  background-color: white;
-  height: 4rem;
-  display: flex;
-  justify-content: center;
+@media screen and (max-width: 640px) {
+  .header {
+    background-color: white;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+  .header__logo {
+    height: 2.5rem;
+    margin-top: 30px;
+  }
 }
-.header__logo {
-  height: 2.5rem;
-  margin-top: 30px;
-}
-
 .section__location {
   display: flex;
   justify-content: center;
@@ -30,97 +31,108 @@ a {
   margin-left: 20px;
 }
 
-body {
-  margin: 0px;
+@media screen and (max-width: 640px) {
+  body {
+    margin: 0px;
+  }
+  main .home {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 15rem;
+    padding: 2rem;
+  }
+  main .function {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .function-title {
+    width: 85%;
+  }
+  main .function-card-list {
+    display: flex;
+    height: 5rem;
+    width: 90%;
+    align-items: inherit;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+  }
+  main .function-card-list::before {
+    counter-increment: compteListe 1;
+    content: counter(compteListe) " ";
+    background: #9356dc;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  main .function-card-list i {
+    padding: 1em;
+  }
+  .restaurants {
+    background-color: #f7f7f7;
+  }
+  .restaurants-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .restaurants-list-card {
+    width: 90%;
+    margin: 20px;
+    border-radius: 12px;
+    background-color: white;
+    height: 15rem;
+  }
+  .restaurants-list-card-img {
+    width: 100%;
+    height: 11rem;
+    border-radius: 12px 12px 0px 0px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .restaurants-list-card-text {
+    margin: 5px 0px 0px 20px;
+  }
+  .restaurants-list-card-place {
+    margin: 5px 0px 0px 20px;
+  }
+}
+.btn {
+  width: 70%;
+  background: rgb(255, 121, 218);
+  background: linear-gradient(180deg, rgb(255, 121, 218) 0%, rgb(186, 98, 219) 100%);
+  box-shadow: 1px 11px 14px 0px rgba(130, 130, 130, 0.38);
+  padding: 20px;
+  color: #FFF;
+  font-family: "Roboto";
+  text-decoration: none;
+  border-radius: 50px;
+  transition: 500ms;
+  margin-left: 5rem;
+}
+.btn:hover {
+  background: linear-gradient(180deg, rgb(255, 153, 226) 0%, rgb(220, 123, 255) 100%);
+  box-shadow: 1px 11px 14px 0px rgba(109, 109, 109, 0.699);
 }
 
-main .home {
-  background-color: #f7f7f7;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  height: 12rem;
-  padding: 2rem;
-}
-main .function {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-main .function-title {
-  width: 100%;
-  margin-left: 8rem;
-}
-main .function-card-list {
-  display: flex;
-  height: 5rem;
-  width: 90%;
-  align-items: inherit;
-  background-color: #f7f7f7;
-  border-radius: 20px;
-  margin-bottom: 1rem;
-}
-main .function-card-list::before {
-  align-items: center;
-  background-color: #9356dc;
-  border-radius: 20px;
-  color: #fff;
-  counter-increment: ope;
-  content: counter(ope);
-  display: flex;
-  height: 1.5em;
-  justify-content: center;
-  padding: 0.3em;
-  width: 1.5em;
-}
-main .function-card-list-title {
-  padding: 1rem;
-}
-main .restaurants {
-  background-color: #f7f7f7;
-}
-main .restaurants-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-main .restaurants-list-card {
-  width: 90%;
-  margin: 20px;
-  border-radius: 12px;
-  background-color: white;
-  height: 15rem;
-}
-main .restaurants-list-card-img {
-  width: 100%;
-  height: 11rem;
-  border-radius: 12px 12px 0px 0px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-main .restaurants-list-card-text {
-  margin: 5px 0px 0px 20px;
-}
-main .restaurants-list-card-place {
-  margin: 5px 0px 0px 20px;
-}
-main .restaurants-list-card i {
-  color: black;
-  font-size: 25px;
-  position: absolute;
-  margin-top: 12.5rem;
-  margin-left: 35rem;
-}
-
-.footer {
-  background-color: #353535;
-  color: white;
-  padding: 2em;
-}
-.footer__logo {
-  filter: invert(1);
-  padding: 5px;
-}
-.footer a {
-  color: white;
+@media screen and (max-width: 640px) {
+  .footer {
+    background-color: #353535;
+    color: white;
+    padding: 2em;
+  }
+  .footer__logo {
+    filter: invert(1);
+    padding: 5px;
+  }
+  .footer a {
+    color: white;
+  }
 }/*# sourceMappingURL=style.css.map */
