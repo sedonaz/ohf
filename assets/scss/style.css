@@ -74,7 +74,7 @@ main .function-card-list::before {
   width: 1.5em;
 }
 main .function-card-list-title {
-  text-align: center;
+  padding: 1rem;
 }
 main .restaurants {
   background-color: #f7f7f7;

@@ -1,7 +1,4 @@
-//responsive
-@media screen and (max-width: $phone){
     
-
 body {
     margin: 0px;
     
@@ -47,7 +44,7 @@ main {
             width: 1.5em;
         }
         &-title {
-            text-align: center;
+            padding: 1rem;
         }
         }
         }
@@ -93,7 +90,6 @@ main {
         }
     }
     }
-}
 }
 
         
