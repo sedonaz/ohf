@@ -9,7 +9,6 @@ main {
         display: flex;
         flex-direction: column;
         text-align: center;
-        height: 15rem;
         padding: 2rem;
     }
 
@@ -66,6 +65,12 @@ main {
             border-radius: 12px;
             background-color: white;
             height: 15rem;
+        &-new {
+            position: absolute;
+            right: 1em;
+            background-color: #99E2D0;
+            margin: 10px 20px 0px 0px;
+        }
         
         &-img {
             width: 100%;
