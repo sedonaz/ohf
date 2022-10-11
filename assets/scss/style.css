@@ -46,10 +46,13 @@ main .function {
   flex-direction: column;
   align-items: center;
 }
+main .function-title {
+  width: 85%;
+}
 main .function-card-list {
   display: flex;
   height: 5rem;
-  width: 85%;
+  width: 90%;
   align-items: inherit;
   background-color: #f7f7f7;
   border-radius: 20px;
@@ -57,6 +60,7 @@ main .function-card-list {
   box-shadow: -2px -5px 11px 0px #dcdcdc;
   transition-duration: 400ms;
   cursor: pointer;
+
 }
 main .function-card-list-order {
   display: flex;
@@ -75,14 +79,8 @@ main .function-card-list:hover {
   transform: scale(1.04);
   background-color: rgba(147, 86, 220, 0.1294117647);
 }
-main .function-card-list:hover i {
-  color: #9356DC;
-}
 main .function-card-list:last-child {
   background-color: rgba(147, 86, 220, 0.1294117647);
-}
-main .function-card-list:last-child .fa-store {
-  color: #9356DC;
 }
 main .function-card-list i {
   padding: 1em;
@@ -91,17 +89,13 @@ main .function-card-list i {
 .restaurants {
   background-color: #f7f7f7;
 }
-.restaurants-title {
-  width: 90%;
-  margin-left: 10px;
-}
 .restaurants-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 .restaurants-list-card {
-  width: 44%;
+  width: 90%;
   margin: 20px;
   border-radius: 12px;
   background-color: white;
@@ -109,11 +103,11 @@ main .function-card-list i {
 }
 .restaurants-list-card-new {
   position: absolute;
+  right: 1em;
   background-color: #99E2D0;
   margin: 10px 20px 0px 0px;
   color: #3CB371;
-  font-size: 1.2rem;
-  font-weight: bolder;
+  font-size: 20px;
   width: 4.5em;
   text-align: center;
 }
@@ -132,12 +126,12 @@ main .function-card-list i {
   justify-content: space-between;
   margin-right: 1em;
 }
-.restaurants-list-card-subtitle .fa-heart {
+.restaurants-list-card-subtitle i {
   font-size: 30px;
   margin-top: -0.5em;
   transition-duration: 500ms;
 }
-.restaurants-list-card-subtitle .fa-heart:hover {
+.restaurants-list-card-subtitle i:hover {
   transform: scale(1.4);
   background: linear-gradient(rgba(255, 121, 218, 0.1568627451), #FF79DA);
 }
@@ -173,33 +167,4 @@ main .function-card-list i {
 }
 .footer a {
   color: white;
-}
-
-@media screen and (max-width: 650px) {
-  .function-title {
-    width: 90%;
-  }
-  .restaurants {
-    width: 100%;
-  }
-  .restaurants-list-card {
-    width: 95%;
-    margin: 10px;
-  }
-  .restaurants-list-card-new {
-    right: 1em;
-  }
-  .restaurants-list-card-text {
-    font-size: 19px;
-  }
-}
-@media (min-width: 650px) {
-  .btn {
-    width: 50%;
-  }
-}
-@media (min-width: 992px) {
-  .btn {
-    width: 30%;
-  }
 }/*# sourceMappingURL=style.css.map */

@@ -3,6 +3,7 @@ body {
     margin: 0px;
     
 }
+//MENU
 main {
     .home {
         background-color: #f7f7f7;
@@ -11,19 +12,17 @@ main {
         text-align: center;
         padding: 2rem;
     }
+//FUNCTIONNING
 
     .function {
         display: flex;
         flex-direction: column;
         align-items: center;
-        &-title{
-            width: 85%;
-        }
-      
+   
        &-card-list {
             display: flex;
             height: 5rem;
-            width: 90%;
+            width: 85%;
             align-items: inherit;
             background-color: #f7f7f7;
             border-radius: 20px;
@@ -45,45 +44,57 @@ main {
             transform: translate(-15px);
         }
         &:hover {
-            transform: scale(1.1);
+            transform: scale(1.04);
             background-color: #9356DC21;
+        i {
+            color: #9356DC;
         }
-        
+        }
+    
         &:last-child {
             background-color: #9356DC21;
+        .fa-store {
+            color: #9356DC;
+        }
         }
             
         i {
             padding: 1em;
-        }
 
+        }
+     
         }
         
-        }
+    }
+   
     }
     
-
+//RESTAURANTS
     .restaurants {
         background-color: #f7f7f7;
-     
+     &-title {
+            width: 90%;
+            margin-left: 10px;
+        }
         &-list { 
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
 
         &-card {
-            width: 90%;
+            width: 44%;
             margin: 20px;
             border-radius: 12px;
             background-color: white;
             height: 16rem;
         &-new {
             position: absolute;
-            right: 1em;
             background-color: #99E2D0;
             margin: 10px 20px 0px 0px;
             color: #3CB371;
-            font-size: 20px;
+            font-size: 1.2rem;
+            font-weight: bolder;
             width: 4.5em;
             text-align: center;
         }
@@ -102,7 +113,7 @@ main {
             display: flex;
             justify-content: space-between;
             margin-right: 1em;
-        i {
+        .fa-heart {
             font-size: 30px;
             margin-top: -0.5em;
             transition-duration: 500ms;
@@ -119,7 +130,11 @@ main {
         
         }
     }
-    }
+}    
+//RESPONSIVE
+
+       
+
 
 
         

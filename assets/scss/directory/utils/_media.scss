@@ -1,2 +1,31 @@
-
+@media screen and(max-width:650px) {
+    .function {
+    &-title {
+        width: 90%;
+    }
+    }
+    .restaurants {
+        width: 100%;
+    &-list-card {
+        width: 95%;
+        margin: 10px;
+        &-new {
+            right: 1em;
+        }
+        &-text {
+            font-size: 19px;
+        }
+    }
+    }
+}
     
+@media (min-width: 650px){
+    .btn {
+    width: 50%;
+    }
+}
+@media (min-width: 992px){
+    .btn {
+  width: 30%;
+    }
+}
