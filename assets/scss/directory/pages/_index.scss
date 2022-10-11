@@ -1,4 +1,4 @@
-@media screen and (max-width: 640px) {    
+   
 body {
     margin: 0px;
     
@@ -28,17 +28,29 @@ main {
             background-color: #f7f7f7;
             border-radius: 20px;
             margin-bottom: 1rem;
-        &::before {
-            counter-increment: compteListe 1;
-            content: counter(compteListe) " ";
-            background: #9356dc;
-            height: 2rem;
-            width: 2rem;
-            border-radius: 100px;
+            box-shadow: -2px -5px 11px 0px #dcdcdc;
+            transition-duration: 400ms;
+            cursor: pointer;
+        &-order {
             display: flex;
             justify-content: center;
             align-items: center;
-            color: #fff;
+            background-color: #9356DC;
+            border-radius: 50%;
+            font-size: 25px;
+            padding: 5px;
+            color: #FFF;
+            width: 1em;
+            height: 1em;
+            transform: translate(-15px);
+        }
+        &:hover {
+            transform: scale(1.1);
+            background-color: #9356DC21;
+        }
+        
+        &:last-child {
+            background-color: #9356DC21;
         }
             
         i {
@@ -48,7 +60,7 @@ main {
         }
         
         }
-        }
+    }
     
 
     .restaurants {
@@ -72,6 +84,8 @@ main {
             margin: 10px 20px 0px 0px;
             color: #3CB371;
             font-size: 20px;
+            width: 4.5em;
+            text-align: center;
         }
         
         &-img {
@@ -82,7 +96,7 @@ main {
         }
 
         &-text {
-            margin: 5px 0px 0px 20px;
+            margin: 5px 0px 0px 10px;
         }
         &-subtitle {
             display: flex;
@@ -91,6 +105,12 @@ main {
         i {
             font-size: 30px;
             margin-top: -0.5em;
+            transition-duration: 500ms;
+        &:hover {
+            transform: scale(1.4);
+            background: linear-gradient( #FF79DA28,#FF79DA);
+            
+        }
         }
         }
         &-place {
@@ -100,7 +120,7 @@ main {
         }
     }
     }
-}
+
 
         
     
