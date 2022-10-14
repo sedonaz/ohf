@@ -1,0 +1,62 @@
+.restaurant-picture {
+  
+    width: 100%;
+    margin-top: 10px;
+    height: 450px;
+    object-fit: cover;
+
+}
+
+.section-menu {
+position: relative;
+background-color: #f7f7f7;
+border-top-left-radius: 60px;
+border-top-right-radius: 60px;
+margin-top: -4em;
+
+    &-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }  
+    &-part {
+        padding: 1em;
+
+    &-title {
+        position: relative;
+        font-weight: 400;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        width: 3.5em;
+        height: 4px;
+        background-color: #99e2d0;
+    }
+    }
+    }
+
+    &-plate {
+        background: white;
+        border-radius: 2em;
+        width: 97%;
+        margin-bottom: 20px;
+        padding: 5px 0px 5px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    &-price {
+        padding: 1em;
+    }
+    }
+
+.order {
+    display: flex;
+    justify-content: center;
+    padding: 0em 0em 1em;
+.btn {
+    text-align: center;
+}
+}
+
+}
