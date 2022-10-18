@@ -15,4 +15,22 @@
     }
    
   }
-  
+ 
+
+.btn-heart {
+  .fa-heart{
+    font-size: 1.3em;
+    
+    &:hover{
+      animation: bgcolor 0.5s;
+      font-weight: 900;
+      background:-webkit-linear-gradient(13deg, rgba(255,121,218,1) 0%, rgba(186,98,219,1) 66%);
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+     cursor: pointer;
+      
+    }
+   } 
+}
