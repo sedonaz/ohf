@@ -1,55 +1,59 @@
-.loading{
-    background: white;
-    position: fixed;
+.section {
+    background-color: $bg-grey;
     height: 100%;
     width: 100%;
-    z-index: 100;
+    color: $color-secondary;
+    position: fixed;
+    z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: time 5s forwards;
 }
-.time-5 {
+
+.loader-circles {
+    position: relative;
     width: 15em;
-    height: 30em;
-    border-top:20px solid #9356DC;
-    border-bottom:20px solid #9356DC;
-    background: linear-gradient(90deg, #9356DC 10px, #9356DC21 0 5px,#9356DC 0) center/10px 10px no-repeat;
-    display: grid;
-    overflow: hidden;
-    animation:t5-0 1.5s infinite linear;
+    height: 15em;
+    border-radius: 50%;
+    border: 2em solid transparent;
+    border-top-color: $color-primary;
+    animation: spin 2s linear infinite;
+
+    &:after{
+        content:"";
+        position: absolute;
+        width: 10em;
+        height: 10em;
+        top: 15px; left: 15px; bottom: 15px; right: 15px;
+        border-radius: 50%;
+        border: 1.7em solid transparent;
+        border-top-color: $color-secondary;
+        animation: spin 3s linear infinite;
+    }
+    &:before{
+        content:"";
+        width: 9em;
+        height: 9em;
+        position: absolute;
+        top: 30px; left: 30px; bottom: 30px; right: 30px;
+        border-radius: 50%;
+        border: 1.5em solid transparent;
+        border-top-color: $color-tertiary;
+        animation: spin 6s linear infinite;
+    }
+
 }
-  .time-5::before,
-  .time-5::after {
-    content: "";
-    grid-area: 1/1;
-    width: 75%;
-    height: 272px;
-    margin: 0 auto;
-    border: 10px solid #9356DC;
-    border-top: 0;
-    border-radius: 0 0 40% 40%;
-    background: 
-      linear-gradient(#99E2D0,#99E2D028 50%,#99E2D0 0) bottom /100% 205%,
-      linear-gradient(#99E2D028 0 0) center/0 100%;
-    background-repeat: no-repeat;
-    animation:inherit;
-    animation-name: t5-1;
-    animation-duration: 3s;
+@keyframes spin{
+    0%{ transform: rotate(0deg); }
+    100%{ transform: rotate(360deg); }
+}
+@keyframes time {
+    from {
+      opacity: 100%;
+    }
+    to {
+      opacity: 0%;
+      visibility: hidden;
+    }
   }
-  
-  .time-5::after {
-    transform-origin: 50% calc(100% + 2px);
-    transform: scaleY(-1);
-  }
-  
-  @keyframes t5-0 {
-    90%  {transform: rotate(0)}
-    100% {transform: rotate(0.5turn)}
-  }
-  
-  @keyframes t5-1 {
-    10%  {background-size:100% 205%, 100%}
-    100% {background-position: top,center}
-  }
-  
-  
