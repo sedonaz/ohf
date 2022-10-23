@@ -12,20 +12,53 @@
         &-new {
             right: 1em;
         }
-        &-text {
-            font-size: 19px;
-        }
     }
-    }
+}
+h3{
+    font-size: 18px;
+}
+p {
+    font-size: 14px;
+}
 }
     
 @media (min-width: 650px){
     .btn {
     width: 50%;
     }
+    .restaurants-list{
+        display: flex;
+        justify-content: space-evenly;
+    &-card{
+        width: 35%;
+        height: 300px;
+    
+    &-img{
+        height: 230px;
+    }
+    }
 }
-@media (min-width: 992px){
+    .restaurants-title{
+        width: 80%;
+    }
+
+}
+
+
+@media (min-width: 992px){   
     .btn {
   width: 30%;
     }
+main .function {
+   width: 50%;
+   margin: auto;
+   &-card-list-title{
+    margin: auto;
+   }
+}
+
+.page .section-header{
+    padding: 30px 50px 15px 50px;
+}
+
 }
