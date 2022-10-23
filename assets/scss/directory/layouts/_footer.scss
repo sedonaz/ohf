@@ -1,7 +1,7 @@
 
 .footer {
     background-color: #353535;
-    color: white;
+    color: $white;
     padding: 2em;
     &__logo {
         filter: invert(1);
@@ -9,7 +9,7 @@
     }
     
     a {
-        color: white;
-        
+        color: $white;
+   
     }
 }
