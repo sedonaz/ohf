@@ -3,14 +3,15 @@ body {
     margin: 0px;
     
 }
+
 //MENU
 main {
     .home {
-        background-color: #f7f7f7;
+        background-color: $bg-grey;
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 2rem;
+        padding: 30px;
     }
 //FUNCTIONNING
 
@@ -24,7 +25,7 @@ main {
             height: 5rem;
             width: 85%;
             align-items: inherit;
-            background-color: #f7f7f7;
+            background-color: $bg-grey;
             border-radius: 20px;
             margin-bottom: 1rem;
             box-shadow: -2px -5px 11px 0px #dcdcdc;
@@ -34,32 +35,32 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #9356DC;
+            background-color: $color-primary;
             border-radius: 50%;
             font-size: 25px;
             padding: 5px;
-            color: #FFF;
+            color: $white;
             width: 1em;
             height: 1em;
             transform: translate(-15px);
         }
         &:hover {
             transform: scale(1.04);
-            background-color: #9356DC21;
+            background-color: #F3ECF7;
         i {
-            color: #9356DC;
+            color: $color-primary;
         }
         }
     
         &:last-child {
-            background-color: #9356DC21;
+            background-color: #F3ECF7;
         .fa-store {
-            color: #9356DC;
+            color: $color-primary;
         }
         }
             
         i {
-            padding: 1em;
+            padding: 20px;
 
         }
      
@@ -71,7 +72,7 @@ main {
     
 //RESTAURANTS
     .restaurants {
-        background-color: #f7f7f7;
+        background-color: $bg-grey;
      &-title {
             width: 90%;
             margin-left: 10px;
@@ -86,22 +87,22 @@ main {
             width: 44%;
             margin: 20px;
             border-radius: 12px;
-            background-color: white;
-            height: 16rem;
+            background-color: $white;
+            height: 250px;
         &-new {
             position: absolute;
-            background-color: #99E2D0;
+            background-color: $color-tertiary;
             margin: 10px 20px 0px 0px;
             color: #3CB371;
-            font-size: 1.2rem;
+            font-size: 20px;
             font-weight: bolder;
-            width: 4.5em;
+            width: 100px;
             text-align: center;
         }
         
         &-img {
             width: 100%;
-            height: 11rem;
+            height: 180px;
             border-radius: 12px 12px 0px 0px;
             object-fit: cover;
         }
@@ -113,25 +114,22 @@ main {
             display: flex;
             justify-content: space-between;
             margin-right: 1em;
-        .fa-heart {
-            font-size: 30px;
-            margin-top: -0.5em;
-            transition-duration: 500ms;
-        &:hover {
-            transform: scale(1.4);
-            background: linear-gradient( #FF79DA28,#FF79DA);
-            
-        }
-        }
-        }
+            margin-left: 1em;
+    
         &-place {
             margin: 5px 0px 0px 20px;
         }
+
         
-        }
     }
-}    
-//RESPONSIVE
+    }
+}
+        }
+    
+    
+
+    
+  
 
        
 
