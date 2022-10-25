@@ -84,19 +84,15 @@
 }
 
 //VALIDATION ROTATION
-.menu-plate:hover .menu-plate-validate{
-  z-index: 2;
-  opacity: 1;
-  right: 0px;
-}
-  
 
 @keyframes rotate {
   0% {
+    transform: rotate(100deg);
+}
+50% {
+    transform: rotate(-50deg);
+}
+100% {
     transform: rotate(0deg);
-
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+}
 }
