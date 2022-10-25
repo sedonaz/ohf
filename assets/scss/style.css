@@ -43,7 +43,7 @@
   border-radius: 2em;
   width: 97%;
   margin-bottom: 20px;
-  padding: 0px 13px 0px 13px;
+  padding: 0px 5px 0px 13px;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 4px 8px #d0d0d0;
@@ -61,29 +61,37 @@
   align-items: center;
   cursor: pointer;
   border-radius: 0em 2em 2em 0em;
-  transition: 0.7s ease-in-out;
   position: absolute;
   right: -100px;
 }
 .page .menu-plate-validate .fa-check-circle {
   color: #fff;
   font-size: 30px;
-  transition: 0.4s ease-in-out;
-  -webkit-animation: rotate 0.8s linear;
-          animation: rotate 0.8s linear;
+}
+.page .menu-plate:hover .menu-plate-validate {
+  opacity: 1;
+  right: 0px;
+  transition: 1s ease-in-out;
+  z-index: 2;
+}
+.page .menu-plate:hover .menu-plate-validate .fa-check-circle {
+  -webkit-animation: rotate 1s ease-in-out;
+          animation: rotate 1s ease-in-out;
 }
 .page .menu-plate-content {
   width: 100%;
-  transition: 0.5s ease-in-out;
+  position: relative;
+  transition: 0.8s ease-in-out;
 }
 .page .menu-plate-content:hover {
   width: calc(100% - 100px);
-  transition: 0.5s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 .page .menu-plate-content-infos {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 10px;
 }
 .page .order {
   display: flex;
@@ -169,7 +177,7 @@ main .function-card-list {
   background-color: #f7f7f7;
   border-radius: 20px;
   margin-bottom: 1rem;
-  box-shadow: -2px -5px 11px 0px #dcdcdc;
+  box-shadow: -2px -5px 11px 0px #d0d0d0;
   transition-duration: 400ms;
   cursor: pointer;
 }
@@ -314,11 +322,24 @@ main .function-card-list i {
   .restaurants-list-card-new {
     right: 1em;
   }
+  .page .menu-plate-validate {
+    width: 15%;
+  }
   h3 {
     font-size: 18px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
   }
   p {
     font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
   }
 }
 @media (min-width: 650px) {
@@ -491,26 +512,25 @@ main .function-card-list i {
     transform: scale(1);
   }
 }
-.menu-plate:hover .menu-plate-validate {
-  z-index: 2;
-  opacity: 1;
-  right: 0px;
-}
-
 @-webkit-keyframes rotate {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(100deg);
+  }
+  50% {
+    transform: rotate(-50deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
 }
-
 @keyframes rotate {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(100deg);
+  }
+  50% {
+    transform: rotate(-50deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
 }/*# sourceMappingURL=style.css.map */
