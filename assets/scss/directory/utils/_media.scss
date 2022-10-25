@@ -13,12 +13,27 @@
             right: 1em;
         }
     }
+    }
+.page .menu-plate-validate{
+
+    width: 15%;
+
 }
 h3{
     font-size: 18px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 p {
     font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 }
     
