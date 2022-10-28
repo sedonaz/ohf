@@ -5,9 +5,23 @@
     padding: 2em;
     &__logo {
         filter: invert(1);
-        padding: 5px;
+        padding-bottom: 15px;
+        width: 100px;
+        height: 30px
     }
-    
+    &-link , &-link2{
+        display: flex;
+        align-items: center;
+        margin-top: -15px;
+
+    .fa-utensils, .fa-handshake {
+        padding-right: 10px;
+    }   
+    &-title{
+        margin-top: 2px
+
+    }
+    }
     a {
         color: $white;
    
