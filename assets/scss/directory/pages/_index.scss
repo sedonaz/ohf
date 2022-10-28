@@ -22,46 +22,47 @@ main {
    
        &-card-list {
             display: flex;
-            height: 5rem;
-            width: 85%;
+            height: 65px;
+            width: 90%;
             align-items: inherit;
             background-color: $bg-grey;
             border-radius: 20px;
-            margin-bottom: 1rem;
-            box-shadow: -2px -5px 11px 0px #d0d0d0;
+            margin-bottom: 20px;
+            margin-left: 12px;
+            box-shadow: 0px 4px 8px #d0d0d0;
             transition-duration: 400ms;
             cursor: pointer;
+        &-title{
+            font-weight: 500;
+        }
         &-order {
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: $color-primary;
             border-radius: 50%;
-            font-size: 25px;
-            padding: 5px;
+            font-size: 15px;
+            padding: 3px;
             color: $white;
-            width: 1em;
-            height: 1em;
+            width: 20px;
+            height: 20px;
             transform: translate(-15px);
         }
         &:hover {
             transform: scale(1.04);
             background-color: #F3ECF7;
+        }
         i {
             color: $color-primary;
+            padding: 20px;
         }
-        }
+        
     
         &:last-child {
             background-color: #F3ECF7;
         .fa-store {
             color: $color-primary;
         }
-        }
-            
-        i {
-            padding: 20px;
-
         }
      
         }
@@ -73,31 +74,33 @@ main {
 //RESTAURANTS
     .restaurants {
         background-color: $bg-grey;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-bottom: 50px;
      &-title {
             width: 90%;
             margin-left: 10px;
         }
-        &-list { 
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        
-
-        &-card {
-            width: 44%;
+        &-card { 
+         width: 35%;
             margin: 20px;
             border-radius: 12px;
             background-color: $white;
-            height: 250px;
+           
+
         &-new {
             position: absolute;
             background-color: $color-tertiary;
-            margin: 10px 20px 0px 0px;
-            color: #3CB371;
-            font-size: 20px;
-            font-weight: bolder;
-            width: 100px;
+            margin: 15px 25px 0px 0px;
+            color: #299666;
+            font-size: 15px;
+            width: 80px;
+            height: 30px;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         
         &-img {
@@ -106,25 +109,19 @@ main {
             border-radius: 12px 12px 0px 0px;
             object-fit: cover;
         }
-
-        &-text {
-            margin: 5px 0px 0px 10px;
-        }
-        &-subtitle {
+        &-content{
             display: flex;
+            align-items: center;
             justify-content: space-between;
-            margin-right: 1em;
-            margin-left: 1em;
-    
-        &-place {
-            margin: 5px 0px 0px 20px;
+            padding: 10px;
+            h3,p{
+                margin: 5px;
+            }
         }
-
-        
-    }
+    
     }
 }
-        }
+        
     
     
 
