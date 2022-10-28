@@ -1,17 +1,17 @@
 
 .header {
     background-color: $white;
-    height: 4rem;
     display: flex;
     justify-content: center;
     &__logo {
-        height: 2.5rem;
-        margin-top: 30px;
+        height: 30px;
+        margin-top: 18px;
+        width: 170px;
     }
     .fa-arrow-left {
         position: absolute;
-        left: 0.5em;
-        top: 1.1em;
+        left: 20px;
+        top: 20px;
         font-size: 20px;
         
     }
