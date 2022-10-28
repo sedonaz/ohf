@@ -96,3 +96,27 @@
     transform: rotate(0deg);
 }
 }
+
+//VALIDATION SLIDE
+
+@keyframes appear {
+  from {
+    transform: scaleX(0);   
+  }
+to {
+    transform: scaleX(1);
+  }
+}
+.menu-plate:hover .menu-plate-validate{
+  animation: appear 500ms linear both;
+
+
+  .fa-check-circle{
+      animation: rotate 1s ease-in-out;
+    }
+  }
+
+.menu-plate:hover .menu-plate-price{
+ padding-right: 90px;
+
+}
