@@ -1,5 +1,6 @@
 .btn {
-    background: linear-gradient(180deg, $color-secondary 0%, $color-primary 100%);
+    background: rgb(255, 121, 218);
+    background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(186,98,219,1) 100%);
     box-shadow: 1px 11px 14px 0px rgba(130,130,130,0.38);
     padding: 20px;
     color: $white;
@@ -11,8 +12,9 @@
     margin: auto;
     margin-top: 10px;
     &:hover {
-      background: linear-gradient(180deg, $color-primary 0%, $color-secondary 100%);
+      background: linear-gradient(180deg, rgb(255, 153, 226) 0%, rgb(220, 123, 255 ) 100%);
       box-shadow: 1px 11px 14px 0px rgba(109, 109, 109, 0.699);
+
     }
    
   }
@@ -30,6 +32,7 @@
       background-clip: text;
       -webkit-text-fill-color: transparent;
       cursor: pointer;
+      animation: bgheart 500ms;
 }
    } 
 }
