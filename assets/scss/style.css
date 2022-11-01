@@ -261,7 +261,8 @@ main .function-card-list:last-child .fa-store {
 }
 
 .btn {
-  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  background: rgb(255, 121, 218);
+  background: linear-gradient(180deg, rgb(255, 121, 218) 0%, rgb(186, 98, 219) 100%);
   box-shadow: 1px 11px 14px 0px rgba(130, 130, 130, 0.38);
   padding: 20px;
   color: #fff;
@@ -274,7 +275,7 @@ main .function-card-list:last-child .fa-store {
   margin-top: 10px;
 }
 .btn:hover {
-  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+  background: linear-gradient(180deg, rgb(255, 153, 226) 0%, rgb(220, 123, 255) 100%);
   box-shadow: 1px 11px 14px 0px rgba(109, 109, 109, 0.699);
 }
 
@@ -289,6 +290,8 @@ main .function-card-list:last-child .fa-store {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
+  -webkit-animation: bgheart 500ms;
+          animation: bgheart 500ms;
 }
 
 .footer {
@@ -513,24 +516,18 @@ main .function-card-list:last-child .fa-store {
 }
 @-webkit-keyframes rotate {
   0% {
-    transform: rotate(100deg);
-  }
-  50% {
-    transform: rotate(-50deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes rotate {
   0% {
-    transform: rotate(100deg);
-  }
-  50% {
-    transform: rotate(-50deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 @-webkit-keyframes appear {
@@ -554,10 +551,46 @@ main .function-card-list:last-child .fa-store {
           animation: appear 500ms linear both;
 }
 .menu-plate:hover .menu-plate-validate .fa-check-circle {
-  -webkit-animation: rotate 1s ease-in-out;
-          animation: rotate 1s ease-in-out;
+  -webkit-animation: rotate 500ms linear;
+          animation: rotate 500ms linear;
 }
 
 .menu-plate:hover .menu-plate-price {
   padding-right: 90px;
+}
+
+@-webkit-keyframes bgheart {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 30%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  80% {
+    opacity: 80%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes bgheart {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 30%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  80% {
+    opacity: 80%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
